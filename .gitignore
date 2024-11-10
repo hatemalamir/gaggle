@@ -1,0 +1,6 @@
+*/build/*
+*/bin/*
+*.csv
+*.cache*
+*.ipynb_checkpoints*
+
