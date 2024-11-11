@@ -26,7 +26,7 @@ add_executable(SpaceshipTitanic
 
 find_package(OpenMP REQUIRED)
 if(OpenMP_CXX_FOUND)
-    target_link_libraries(SpaceshipTitanic PUBLIC OpenMP::OpenMP_CXX armadillo)
+    target_link_libraries(SpaceshipTitanic PUBLIC OpenMP::OpenMP_CXX armadillo python3.12)
 endif()
 
 
