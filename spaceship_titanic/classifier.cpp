@@ -1,3 +1,4 @@
+#include "mlpack/core/hpt/hpt.hpp"
 #include "mlpack/core/util/forward.hpp"
 #define MLPACK_PRINT_INFO
 #define MLPACK_PRINT_WARN
@@ -21,6 +22,7 @@ int main()
               << validDataset.n_cols << " validation." << std::endl;
 
     std::cout << ">> Training a RandomForest classifier..." << std::endl;
+    mlpack::HyperParameterTuner<> rfHpt;
     std::vector<double> rfNTree{1, 10, 50, 100, 150, 200, 300, 500};
     std::vector<double> rfTrainScores, rfValidScores;
     for(const auto& nTree: rfNTree) {
